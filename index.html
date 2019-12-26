@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no, viewport-fit=cover">
+    <title>BadBoy</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src='https://surikov.github.io/webaudiofont/npm/dist/WebAudioFontPlayer.js'></script> -->
+    <!-- <script src='https://surikov.github.io/webaudiofontdata/sound/0090_JCLive_sf2_file.js'></script> -->
+    <script src="WebAudioFontPlayer.js" charset="utf-8"></script>
+    <script src="0090_JCLive_sf2_file.js" charset="utf-8"></script>
+    <script src="badboy.json" charset="utf-8"></script>
+  </head>
+  <body>
+    <canvas id="canvasBG" width="640" height="400"></canvas>
+    <canvas id="canvasFX" width="640" height="400"></canvas>
+    <canvas id="canvas" width="640" height="400"></canvas>
+    <canvas id="canvasGUI" width="640" height="400"></canvas>
+    <a class="btn up">▲</a>
+    <a class="btn down">▼</a>
+    <progress id="progress" value="0" max="655"></progress>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
