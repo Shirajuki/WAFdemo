@@ -11,6 +11,11 @@
     <meta name="theme-color" content="#ffffff">
     <title>BadBoy</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js');
+      }
+    </script>
     <!-- <script src='https://surikov.github.io/webaudiofont/npm/dist/WebAudioFontPlayer.js'></script> -->
     <!-- <script src='https://surikov.github.io/webaudiofontdata/sound/0090_JCLive_sf2_file.js'></script> -->
     <script src="WebAudioFontPlayer.js" charset="utf-8"></script>
