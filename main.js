@@ -117,7 +117,7 @@ class gameState {
 		object1.y < object2.y + object2.height && object1.y + object1.height > object2.y)
   }
 }
-class Object {
+class Objected {
   constructor(x,y,dx,img=undefined) {
     this.y = y;
     this.x = x;
@@ -149,7 +149,7 @@ class Object {
     this.x -= this.dx;
   }
 }
-class Note extends Object {
+class Note extends Objected {
   constructor(x,y,dx,img,pitch,duration) {
     super(x,y,dx,img,pitch)
     this.pitch = pitch;
@@ -202,7 +202,7 @@ function spawnNote(x,y,pitch,duration) {
   game.notes.push(new Note(x,y,5,"note",pitch,duration));
 }
 function spawnFootstep(x,y) {
-  game.footsteps.push(new Object(game.player.x,game.player.y,3,"footstep"));
+  game.footsteps.push(new Objected(game.player.x,game.player.y,3,"footstep"));
 }
 let trigger = 0;
 let autoplay = false;
